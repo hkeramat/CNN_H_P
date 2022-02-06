@@ -21,7 +21,7 @@ from keras.callbacks import LearningRateScheduler
 from dataset         import *
 
 ### ************************************************
-### I/O convolutional layer
+### I/O convolutional layer### one convolution operation# first gets the hyperparameters and then operates the kernel
 def io_conv_2D(x,
                filters     = 8,
                kernel_size = 3,
@@ -38,7 +38,7 @@ def io_conv_2D(x,
     return x
 
 ### ************************************************
-### I/O max-pooling layer
+### I/O max-pooling layer # one maxpoolig layer---------------------
 def io_maxp_2D(x,
                pool_size = 2,
                strides   = 2):
@@ -49,7 +49,7 @@ def io_maxp_2D(x,
     return x
 
 ### ************************************************
-### I/O VGG block
+### I/O VGG block # one block which gets the numbers of colvolutions and maxpoling( for example 2 conv and one maxpool--------
 def io_VGG(x,
            nb_fltrs  = 8,
            conv_knl  = 3,
@@ -71,7 +71,7 @@ def io_VGG(x,
     return x
 
 ### ************************************************
-### VGG network
+### VGG network# one full vgg implementation
 def VGG(train_im,
         train_sol,
         valid_im,
