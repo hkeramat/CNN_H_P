@@ -1,0 +1,12 @@
+__pycache__
+.DS_Store
+results
+*.png
+*.h5
+*.json
+*~
+accuracy_and_loss
+loss
+drag_relative_error
+MDS0/drags*
+MDS0/shapes*
